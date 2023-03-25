@@ -1,0 +1,953 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0px 0px;
+    background: url("../images/banner.png") center top no-repeat;
+    background-size: cover;
+}
+
+.header .navbar .navbar-brand {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header .navbar-expand-lg .navbar-nav .nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.header .navbar-expand-lg .navbar-nav .nav-link:hover {
+    background: url(../images/dash.png) bottom left no-repeat;
+    background-size: auto;
+}
+
+
+.header .navbar-toggler {
+    border: 1px solid white;
+}
+
+.header .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.header .banner {
+    color: white;
+}
+
+.header .banner .bannerleft {
+    padding: 0px 5px 0px 5px;
+}
+
+.header .banner h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #008ed6;
+    margin-top: 104px;
+    margin-bottom: 33px;
+}
+
+.header .banner h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+
+.header .banner p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+    margin-bottom: 60px;
+}
+
+.header .banner .buttons {
+    width: 100%;
+    padding: 0px 20px;
+
+}
+
+.header .banner .btn-heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    width: 160px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #008ed6;
+    padding: 20px 25px;
+    border: 2px solid #008ed6;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.header .banner .btn-heading:hover {
+    background-color: transparent;
+    border: 2px solid #454449;
+}
+
+.overview {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.overview .ovheading h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+}
+
+.overview .ovheading h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    color: black;
+    margin-top: 24px;
+}
+
+.overview .ovheading img {
+    width: 15%;
+    margin: 16px auto 0px;
+}
+
+.overview .imageborder {
+    border-radius: 999em;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    line-height: 0;
+    border: 2px solid #ebebeb;
+    margin: 0px auto;
+}
+
+.overview .ovcards {
+    margin-top: 40px;
+}
+
+.overview .ovcards .card {
+    border: 0px transparent;
+    padding: 20px 0px;
+}
+
+.overview .ovcards .card-body .card-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+}
+
+.overview .ovcards .card-body .card-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 10px;
+    color: #999999;
+}
+
+.overview .ovcards .imageborder img {
+    width: 50%;
+    text-align: center;
+    margin: 22px 20px;
+}
+
+.feat01 {}
+
+.feat01 .featright {}
+
+.feat01 .featright h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+}
+
+.feat01 .featright h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.feat01 .featright .dash {
+    width: 20%;
+    margin: 30px 0px;
+}
+
+.feat01 .featright p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin: 30px 0px;
+    color: #999999;
+}
+
+.feat01 .featright ul {
+    padding-left: 0px;
+}
+
+.feat01 .featright ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.feat01 .featright span img {
+    width: 3%;
+    height: 17px;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.feat02 .featleft h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+}
+
+.feat02 .featleft h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.feat02 .featleft .dash {
+    width: 20%;
+    margin: 30px 0px;
+}
+
+.feat02 .featleft p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin: 30px 0px;
+    color: #999999;
+}
+
+.feat02 .featright .feat02img img {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+/* Testimonial Carousel...................................... */
+
+.testimonials {
+    padding: 0px 0px;
+    background: url("../images/tback.png") top no-repeat;
+    background-size: cover;
+}
+
+.testimonials .heading {
+    text-align: center;
+}
+
+.testimonials .heading h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+}
+
+.testimonials .heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.testimonials .heading .dash {
+    width: 15%;
+    margin: 30px auto 0px;
+}
+
+.testimonials .statements .item h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0px 5px 5px 0px;
+    color: #fff;
+    padding-left: 0px;
+}
+
+.testimonials .statements .item img {
+    margin-top: 25px;
+}
+
+.testimonials .statements .item h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
+.testimonials .statements .item p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 0px;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot {
+    margin-top: 80px;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: white;
+    border: 1px solid white;
+
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot.active span {
+    height: 15px;
+    width: 15px;
+    margin: 3px 7px;
+}
+
+
+/* Eyecatcher Section */
+
+.eyecatcher {
+    background-color: #15141a;
+    padding: 50px 0px;
+}
+
+
+/* Eyecatcher Left */
+.eyecatcher .sectionleft {
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+.eyecatcher .sectionleft {
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+.eyecatcher .sectionleft h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.eyecatcher .sectionleft span {
+    font-weight: 300;
+}
+
+.eyecatcher .sectionright a {
+    margin-left: 0px;
+}
+
+.eyecatcher .sectionright .btn-eyecatcher {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    width: 160px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #008ed6;
+    padding: 10px 20px;
+    border: 2px solid #008ed6;
+    border-radius: 2px;
+}
+
+.eyecatcher .sectionright .btn-eyecatcher:hover {
+    background-color: transparent;
+    border: 2px solid #454449;
+}
+
+.eyecatcher .sectionright .btn-eyecatcher:focus {
+    background-color: transparent;
+    border: 2px solid #454449;
+}
+
+/* Eyecatcher Right */
+
+/* Pricing Section */
+.pricing {
+    margin: 60px 0px;
+}
+
+/* Heading */
+
+.pricing .heading {
+    text-align: center;
+}
+
+.pricing .heading h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+}
+
+.pricing .heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.pricing .heading .dash {
+    width: 15%;
+    margin: 16px auto 0px;
+}
+
+/* Plan Card */
+.pricing .plans {
+    margin: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Plan Card */
+
+
+/* Plan/Free */
+.pricing .package {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0px;
+
+}
+
+.pricing .package h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Plan/Free */
+
+/* Price Box Border */
+.pricing .price {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Value*/
+.pricing .price h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 45px 0px 15px;
+}
+
+/* Dollar Symbol */
+.pricing .price h1 sup {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    top: -22px;
+}
+
+/* Value */
+.pricing .price p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+    padding-bottom: 35px;
+}
+
+/* Boxcontent */
+
+.pricing .boxcontent {
+    padding: 50px 0px 30px;
+}
+
+/* Boxcontent Paragraph */
+.pricing .boxcontent p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+    padding: 0px 35px 0px;
+}
+
+/* Boxcontent Paragraph Link */
+.pricing .boxcontent span a {
+    text-decoration: none;
+    color: #008ed6;
+}
+
+/* Boxcontent Button-Order Now */
+.pricing .boxcontent .btnordernow {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #008ed6;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 160px;
+    padding: 20px 0px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 45px;
+}
+
+/* Pricing Hover */
+
+.plans:hover .package h2 {
+    color: #008ed6;
+}
+
+.plans:hover .price {
+    background-color: #008ed6;
+}
+
+.plans:hover .price h1 {
+    color: #fff;
+}
+
+.plans:hover .price p {
+    color: #fff;
+}
+
+.plans:hover .boxcontent .btnordernow {
+    background: #008ed6;
+    color: white;
+    border: 2px solid #008ed6;
+}
+
+/* Contact Us */
+.contact .heading {
+    text-align: center;
+}
+
+.contact .heading h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #008ed6;
+    font-weight: 700;
+}
+
+.contact .heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact .heading .dash {
+    width: 15%;
+    margin: 30px auto 0px;
+}
+
+.contact .plm .bi::before {
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: #008ed6;
+}
+
+.contact .plm p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 28px;
+}
+
+/* Footer */
+
+.footer {
+    background: #15141a;
+}
+
+.footer .sicons ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.footer .sicons ul li a {
+    color: #444348;
+}
+
+.footer .sicons ul li a:hover {
+    color: #008ed6;
+}
+
+.footer .ftext p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444348;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.footer .ftext p a {
+    text-decoration: none;
+    color: #444348;
+}
+
+.footer .ftext p a:hover {
+    color: #008ed6;
+}
+
+.contact {
+    position: relative;
+    z-index: 1;
+    margin: 0px 0px -70px 0px;
+}
+
+.contact .cform {
+    background-color: #15141a;
+    padding: 40px 20px;
+}
+
+.contact .cform .form-control {
+    margin: 0px 20px 25px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: transparent;
+    border-color: #444348;
+}
+
+.contact .cform .form-control::placeholder {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #5d5c5f;
+}
+
+.contact .btn-contact {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    border: 2px solid #008ed6;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.contact .btn-contact:hover {
+    background-color: transparent;
+    border: 2px solid #5d5c5f;
+}
+
+.contact .smbtn {
+    text-align: center;
+}
+
+/* Map */
+.map {
+    width: 100%;
+}
+
+/* 
+* {
+    outline: 1px solid red;
+    } */
+
+/* Media Queries ____________________________________________ */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* CSS */
+    .feat01 {
+        text-align: center;
+    }
+
+    .feat01 .feat01img img {
+        margin: auto;
+    }
+
+    .feat01 .featright .dash {
+        width: 10%;
+        margin: 30px auto 0px;
+    }
+
+    .feat01 .featright span img {
+        width: 2%;
+        height: 15px;
+        margin-right: 12px;
+        display: inline-block;
+    }
+
+    .feat02 .featleft .dash {
+        width: 10%;
+        margin: 30px auto 0px;
+    }
+
+    .contact .cform {
+        padding: 40px 20px;
+    }
+
+    .contact .cform .form-control {
+        margin: 0px 20px 25px 0px;
+        padding: 22px 20px;
+        border-radius: 5px;
+        background: transparent;
+        border-color: #444348;
+    }
+
+    .contact .smbtn {
+        text-align: right;
+    }
+
+    .eyecatcher {
+        text-align: center;
+    }
+
+    .eyecatcher .sectionright {
+        margin-top: 15px;
+    }
+
+    .feat01 .featright {
+        text-align: center;
+    }
+
+    .feat02 .featleft {
+        text-align: center;
+    }
+
+    .header .headbtn {
+        text-align: center;
+    }
+
+    .header .banner .btn-heading {
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    /* CSS */
+    .header .banner h6 {
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+
+    .header .banner p {
+        margin-bottom: 10px;
+    }
+
+    .header .banner .btn-heading {
+        width: 140px;
+        padding: 20px 0px;
+        border: 2px solid #008ed6;
+        border-radius: 2px;
+        margin: 5px 10px 10px 0px;
+    }
+
+    .feat01 .featright .dash {
+        width: 20%;
+        margin: 30px auto 0px;
+    }
+
+    .feat02 .featleft .dash {
+        width: 20%;
+        margin: 30px auto 0px;
+    }
+    .testimonials .statements .item img {
+        margin-top: 25px;
+        max-width: 70%;
+    }
+
+    .overview .ovheading img {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .pricing .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .testimonials .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .contact .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .contact .smbtn {
+        text-align: right;
+    }
+
+    .eyecatcher {
+        text-align: center;
+    }
+
+    .eyecatcher .sectionright {
+        margin-top: 15px;
+    }
+
+    .feat01 .featright {
+        text-align: center;
+    }
+
+    .feat02 .featleft {
+        text-align: center;
+    }
+
+    .header .headbtn {
+        text-align: center;
+    }
+
+    .header .banner .btn-heading {
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+
+    .contact .cform .form-control {
+        margin: 0px 20px 10px 0px;
+        padding: 29px 10px;
+        border-radius: 5px;
+        background: transparent;
+        border-color: #444348;
+    }
+
+    .eyecatcher .sectionright .btn-eyecatcher {
+        width: 135px;
+        padding: 10px 10px;
+        border: 2px solid #008ed6;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 2560px) {
+
+    /* CSS */
+    .header .navbar-expand-lg .navbar-nav .nav-link {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .testimonials .statements .item img {
+        margin-top: 25px;
+        max-width: 50%;
+    }
+
+    .overview .ovheading img {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .pricing .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .testimonials .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .contact .heading .dash {
+        width: 5%;
+        margin: 30px auto 0px;
+    }
+
+    .contact .cform {
+        background-color: #15141a;
+        padding: 40px 40px;
+    }
+
+    .header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        background: url(../images/dash.png) center left no-repeat;
+        background-size: auto;
+    }
+}
